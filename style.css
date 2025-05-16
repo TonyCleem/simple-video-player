@@ -15,6 +15,7 @@
     color: white;
     flex-grow: 1;
 }
+
 .indented-block {
     flex-grow: 500;
 }
