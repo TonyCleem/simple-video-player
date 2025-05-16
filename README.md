@@ -4,3 +4,4 @@
 
 # Использование
 Чтобы просмотреть возможности плеера перейдите по [ссылке](https://tonycleem.github.io/simple-video-player)
+
