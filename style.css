@@ -1,17 +1,16 @@
 .panel-button {
+    height: 30px;
     background-color:black;
     display: flex;
     flex-direction: row;
 }
 
 .control-button {
-    width: 25px;
-    height: 25px;
     border-style: none;
     cursor: pointer;
     background-color: transparent;
     font-size: medium;
-    margin: 5px;
+    margin: 5px 2px;
     color: white;
     flex-grow: 1;
 }
