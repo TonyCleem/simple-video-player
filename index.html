@@ -14,27 +14,49 @@
   </head>
 
   <body style="height: 100%;">
-      <div id="player" style="width: 640px; height: 480px; box-shadow:  0 0 10px 5px rgba(0,0,0,0.5);
+      <div id="player" style="width: 711px; height: 533px; box-shadow:  0 0 10px 5px rgba(0,0,0,0.5);
       display: flex; flex-direction: column;">
-        <div class="js-video-container" style="flex-grow: 1;"></div> 
-          <div class="panel-button">
-            <button class="js-play-button control-button"; type="button";>
-                <i class="fa fa-play fa-sm" aria-hidden="true"></i>
-            </button>
-            <button class="js-pause-button control-button" hidden; type="button";>
-                <i class="fa fa-pause" aria-hidden="true"></i>
-            </button>
-            <button class="js-mute-button control-button">
-                <i class="fa fa-volume-up fa-xs" aria-hidden="true"></i>
-            </button>
-            <button class="js-volume-button control-button">
-                <i class="fa fa-volume-off fa-xs" aria-hidden="true"></i>
-            </button>
-            <div class="indented-block"></div>
-            <button class="js-fullscreen-button control-button">
-                <i class="fa fa-expand fa-sm" aria-hidden="true"></i>
-            </button>
+        <div class="js-video-container" style="flex-grow: 1;"></div>
+
+
+
+        <!-- panel-button -->
+        <div class="panel-button">
+          <div class="left-button">
+              <button class="js-play-button control-button"; type="button";>
+                  <i class="fa fa-play fa-sm" aria-hidden="true"></i>
+              </button>
+              <button class="js-pause-button control-button" hidden; type="button";>
+                  <i class="fa fa-pause" aria-hidden="true"></i>
+              </button>
+              <button class="js-mute-button control-button">
+                  <i class="fa fa-volume-up fa-xs" aria-hidden="true"></i>
+              </button>
+              <button class="js-volume-button control-button">
+                  <i class="fa fa-volume-off fa-xs" aria-hidden="true"></i>
+              </button>
           </div>
+
+          
+          <div class="viewing-panel">
+            <span class="js-current-time viewing-time" style="color: white;"></span>
+            <div class="viewing-progressbar">
+                <p class="viewing-progressbar">beta</p>
+            </div>
+            <span class="js-duration viewing-time "></span>
+          </div>
+
+          <div class="right-button">
+              <button class="js-fullscreen-button control-button">
+                  <i class="fa fa-expand fa-sm" aria-hidden="true"></i>
+              </button>
+          </div>
+
+        </div>
+        <!-- panel-button -->
+
+
+
         </div>
       </div>
   

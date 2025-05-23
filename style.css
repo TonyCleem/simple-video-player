@@ -1,20 +1,41 @@
 .panel-button {
-    height: 30px;
+    height: 35px;
     background-color:black;
     display: flex;
     flex-direction: row;
 }
 
-.control-button {
+
+.panel-button .control-button {
     border-style: none;
     cursor: pointer;
     background-color: transparent;
     font-size: medium;
-    margin: 5px 2px;
+    margin: 7px 3px;
     color: white;
     flex-grow: 1;
 }
 
-.indented-block {
+
+.panel-button .viewing-panel {
+    display: flex;
+    flex-direction: row;
     flex-grow: 500;
+}
+
+.panel-button .viewing-time {
+    color: white;
+    margin: 7px 1px;
+    font-family: 'Roboto';
+}
+
+/* .panel-button .video-duration {
+    color: white;
+    margin: 5px;
+} */
+
+.panel-button .viewing-progressbar {
+    color: red
+    margin: auto;
+    flex-grow: 10;
 }
