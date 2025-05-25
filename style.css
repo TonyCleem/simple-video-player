@@ -20,12 +20,12 @@
 .panel-button .viewing-panel {
     display: flex;
     flex-direction: row;
-    flex-grow: 500;
+    flex-grow: 1;
 }
 
 .panel-button .viewing-time {
     color: white;
-    margin: 7px 1px;
+    margin: 6px 0px;
     font-family: 'Roboto';
 }
 
@@ -34,8 +34,38 @@
     margin: 5px;
 } */
 
-.panel-button .viewing-progressbar {
-    color: red
-    margin: auto;
-    flex-grow: 10;
+.viewing-panel .viewing-progressbar {
+    flex-grow: 1;
+    margin: 13px 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.viewing-progressbar .js-progress {
+    flex-grow: 1;
+    height: 4px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.js-progress .js-progress-slider {
+    background-color: red;
+    height: 4px;
+    border-radius: 10px;
+}
+
+
+.js-progress .dot {
+    height: 7px;
+    width: 7px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+    margin-left: -6px;
+    margin-top: -3px;
+
 }
