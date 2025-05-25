@@ -67,5 +67,22 @@
     border-color: white;
     margin-left: -6px;
     margin-top: -3px;
+    opacity: 0;
+    transition: opacity 0.3s linear;
 
+}
+
+.js-progress:hover .dot {
+    height: 7px;
+    width: 7px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+    margin-left: -6px;
+    margin-top: -3px;
+    opacity: 1;
+    transition: opacity 0.3s linear;
 }

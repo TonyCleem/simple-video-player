@@ -1,0 +1,6 @@
+.animated-btn {
+  background-color: red;
+}
+.btn-wrapper:hover .animated-btn {
+  background-color: blue;
+}
