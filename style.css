@@ -5,15 +5,26 @@
     flex-direction: row;
 }
 
-
 .panel-button .control-button {
+    width: 20px;
+    height: 20px;
     border-style: none;
     cursor: pointer;
     background-color: transparent;
     font-size: medium;
-    margin: 7px 3px;
+    margin: 6px 3px;
     color: white;
-    flex-grow: 1;
+}
+
+.fullsreen-button {
+    width: 24px;
+    height: 24px;
+    border-style: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: medium;
+    margin: 5px 6px;
+    color: white;
 }
 
 
@@ -25,33 +36,35 @@
 
 .panel-button .viewing-time {
     color: white;
-    margin: 6px 0px;
+    margin: 6px 9px;
     font-family: 'Roboto';
 }
 
-/* .panel-button .video-duration {
+.panel-button .video-duration {
     color: white;
-    margin: 5px;
-} */
+    margin: 6px -4px;
+    font-family: 'Roboto';
+}
 
 .viewing-panel .viewing-progressbar {
     flex-grow: 1;
-    margin: 13px 5px;
     display: flex;
     flex-direction: row;
+    margin-top: 13px;
+    margin-right: 13px;
 }
 
 .viewing-progressbar .js-progress {
     flex-grow: 1;
-    height: 4px;
+    height: 5px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
 }
 
 .js-progress .js-progress-slider {
-    background-color: red;
-    height: 4px;
+    background-color: #f8104d;
+    height: 5px;
     border-radius: 10px;
 }
 
@@ -59,30 +72,30 @@
 .js-progress .dot {
     height: 7px;
     width: 7px;
-    background-color: red;
+    background-color: #f8104d;
     border-radius: 50%;
     display: inline-block;
     border: solid;
     border-width: 3px;
     border-color: white;
     margin-left: -6px;
-    margin-top: -3px;
+    margin-top: -4px;
     opacity: 0;
-    transition: opacity 0.3s linear;
+    transition: opacity 0.2s linear;
 
 }
 
 .js-progress:hover .dot {
     height: 7px;
     width: 7px;
-    background-color: red;
+    background-color: #f8104d;
     border-radius: 50%;
     display: inline-block;
     border: solid;
     border-width: 3px;
     border-color: white;
     margin-left: -6px;
-    margin-top: -3px;
+    margin-top: -4px;
     opacity: 1;
-    transition: opacity 0.3s linear;
+    transition: opacity 0.2s linear;
 }

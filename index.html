@@ -4,6 +4,7 @@
       <title>Пример подключения плеера</title>
       <meta charset="utf-8">
       <script src="https://kit.fontawesome.com/791c9d7c86.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="normalize.css">
       <link rel="stylesheet" href="font-awesome.min.css">
       <link rel="stylesheet" href="style.css">
       <link rel="icon" type="image/png" href="static/favicon-96x96.png" sizes="96x96" />
@@ -17,50 +18,38 @@
       <div id="player" style="width: 711px; height: 533px; box-shadow:  0 0 10px 5px rgba(0,0,0,0.5);
       display: flex; flex-direction: column;">
         <div class="js-video-container" style="flex-grow: 1;"></div>
-
-
-
-        <!-- panel-button -->
         <div class="panel-button">
           <div class="left-button">
               <button class="js-play-button control-button"; type="button";>
-                  <i class="fa fa-play fa-sm" aria-hidden="true"></i>
+                  <i class="fa fa-play fa-lg" aria-hidden="true"></i>
               </button>
               <button class="js-pause-button control-button" hidden; type="button";>
-                  <i class="fa fa-pause" aria-hidden="true"></i>
+                  <i class="fa fa-pause fa-lg" aria-hidden="true"></i>
               </button>
               <button class="js-mute-button control-button">
-                  <i class="fa fa-volume-up fa-xs" aria-hidden="true"></i>
+                  <i class="fa fa-volume-up fa-sm" aria-hidden="true"></i>
               </button>
               <button class="js-volume-button control-button">
-                  <i class="fa fa-volume-off fa-xs" aria-hidden="true"></i>
+                  <i class="fa fa-volume-off fa-sm" aria-hidden="true"></i>
               </button>
           </div>
 
-          
           <div class="viewing-panel">
             <span class="js-current-time viewing-time" style="color: white;"></span>
-
             <div class="viewing-progressbar">
               <div class="js-progress">
                 <div class="js-progress-slider"></div>
                 <span class="dot"></span>
               </div>
             </div>
-
-            <span class="js-duration viewing-time "></span>
+            <span class="js-duration video-duration"></span>
           </div>
 
           <div class="right-button">
-              <button class="js-fullscreen-button control-button">
-                  <i class="fa fa-expand fa-sm" aria-hidden="true"></i>
-              </button>
+            <button class="js-fullscreen-button fullsreen-button">
+                <i class="fa fa-expand fa-sm" aria-hidden="true"></i>
+            </button>
           </div>
-
-        </div>
-        <!-- panel-button -->
-
-
 
         </div>
       </div>
