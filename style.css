@@ -1,3 +1,7 @@
+.js-video-container {
+    flex-grow: 1;
+}
+
 .custom-player {
     width: 800px;
     height: 600px; 
