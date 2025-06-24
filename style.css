@@ -1,0 +1,98 @@
+.custom-player {
+    width: 800px;
+    height: 600px; 
+    box-shadow:  0 0 10px 5px rgba(0,0,0,0.5);
+    display: flex; 
+    flex-direction: column;
+    margin: 6px;
+}
+
+.panel-button {
+    height: 45px;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3px;
+    padding: 0px 3px;
+}
+
+.panel-button .control-button-block {
+    display: flex;
+    column-gap: 5px;
+}
+
+.panel-button .control-button {
+    border-style: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: medium;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.panel-button .viewing-panel {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    column-gap: 13px;
+}
+
+.panel-button .viewing-time {
+    display: flex;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.viewing-panel .viewing-progressbar {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:0px 4px;
+}
+
+.viewing-progressbar .js-progress {
+    height: 5px;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.js-progress .js-progress-slider {
+    background-color: #f8104d;
+    border-radius: 10px;
+}
+
+
+.js-progress .dot {
+    width: 9px;
+    height: 9px;
+    background-color: #f8104d;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+    margin-left: -6px;
+    margin-top: -3px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.js-progress .dot:hover {
+    width: 9px;
+    height: 9px;
+    background-color: #f8104d;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+    margin-left: -6px;
+    margin-top: -3px;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}

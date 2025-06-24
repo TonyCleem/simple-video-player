@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+      <title>Пример подключения плеера</title>
+      <meta charset="utf-8">
+      <script src="https://kit.fontawesome.com/791c9d7c86.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="font-awesome.min.css">
+      <link rel="icon" type="image/png" href="static/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="static/favicon.svg" />
+      <link rel="shortcut icon" href="static/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png" />
+      <link rel="manifest" href="static/site.webmanifest" />
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+      <div class="custom-player" id="player">
+        <div class="js-video-container" style="flex-grow: 1;"></div>
+        <div class="panel-button">
+          <div class="control-button-block">
+              <button class="js-play-button control-button" type="button">
+                  <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+              </button>
+              <button class="js-pause-button control-button" hidden type="button">
+                  <i class="fa fa-pause fa-lg" aria-hidden="true"></i>
+              </button>
+              <button class="js-mute-button control-button">
+                  <i class="fa fa-volume-up fa-l" aria-hidden="true"></i>
+              </button>
+              <button class="js-volume-button control-button">
+                  <i class="fa fa-volume-off fa-l" aria-hidden="true"></i>
+              </button>
+          </div>
+
+          <div class="viewing-panel">
+            <span class="js-current-time viewing-time"></span>
+            <div class="viewing-progressbar">
+              <div class="js-progress">
+                <div class="js-progress-slider"></div>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <span class="js-duration viewing-time"></span>
+          </div>
+
+          <div class="control-button-block">
+            <button class="js-fullscreen-button control-button">
+                <i class="fa fa-expand" aria-hidden="true"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+  
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+  
+      <script src="player.js"></script>
+  
+      <script type="text/javascript">
+          createPlayer({ elementId: 'player' });
+      </script>
+  
+  </body>
+</html>
